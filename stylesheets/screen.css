@@ -1,0 +1,330 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* line 15, ../sass/screen.scss */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* line 21, ../sass/screen.scss */
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 29, ../sass/screen.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+/* line 36, ../sass/screen.scss */
+header {
+  background: #353637;
+  color: #ffffff;
+  min-height: 70px;
+  border-bottom: #32a0c2 3px solid;
+}
+/* line 42, ../sass/screen.scss */
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* line 49, ../sass/screen.scss */
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+/* line 55, ../sass/screen.scss */
+header nav {
+  padding-top: 30px;
+}
+/* line 59, ../sass/screen.scss */
+header #branding {
+  float: left;
+  padding-top: 10px;
+}
+/* line 64, ../sass/screen.scss */
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+/* line 69, ../sass/screen.scss */
+header .highlight, header .current a {
+  color: #32a0c2;
+  font-weight: bold;
+}
+/* line 74, ../sass/screen.scss */
+header a:hover {
+  color: #cccccc;
+  text-decoration: underline;
+}
+
+/* Showcase */
+/* line 82, ../sass/screen.scss */
+#showcase {
+  min-height: 500px;
+  background: url("../images/headerbg.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 90, ../sass/screen.scss */
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Passion One;
+  text-shadow: 3px 3px #353637;
+}
+/* line 99, ../sass/screen.scss */
+#showcase p {
+  font-size: 20px;
+}
+
+/* Newsletter */
+/* line 106, ../sass/screen.scss */
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #353637;
+  border-top: #32a0c2 3px solid;
+}
+/* line 112, ../sass/screen.scss */
+#newsletter h1 {
+  float: left;
+  font-size: 36px;
+  font-weight: bold;
+}
+/* line 118, ../sass/screen.scss */
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+/* line 123, ../sass/screen.scss */
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* line 130, ../sass/screen.scss */
+.button-1 {
+  height: 38px;
+  background: #cccccc;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #353637;
+}
+/* line 138, ../sass/screen.scss */
+.button-1:hover {
+  background: #a3a3a3;
+}
+
+/* line 144, ../sass/screen.scss */
+#boxes {
+  margin-top: 20px;
+}
+/* line 147, ../sass/screen.scss */
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 32%;
+  padding: 10px;
+}
+/* line 154, ../sass/screen.scss */
+#boxes h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* line 161, ../sass/screen.scss */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #32a0c2;
+  text-align: center;
+}
+
+/* Sidebar */
+/* line 171, ../sass/screen.scss */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  padding: 5px;
+}
+/* line 176, ../sass/screen.scss */
+aside#sidebar h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 182, ../sass/screen.scss */
+article#main-col {
+  float: left;
+  width: 65%;
+}
+/* line 186, ../sass/screen.scss */
+article#main-col h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* line 196, ../sass/screen.scss */
+aside#sidebar input, aside#sidebar textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* Services */
+/* line 206, ../sass/screen.scss */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background-color: #54b5d3;
+}
+/* line 214, ../sass/screen.scss */
+ul#services h3 {
+  border-bottom: #353637 solid 1px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 220, ../sass/screen.scss */
+ul#services p {
+  padding-top: 20px;
+}
+/* line 224, ../sass/screen.scss */
+ul#services .price {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* line 232, ../sass/screen.scss */
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* line 245, ../sass/screen.scss */
+  header {
+    padding-bottom: 20px;
+  }
+
+  /* line 249, ../sass/screen.scss */
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  /* line 253, ../sass/screen.scss */
+  #newsletter button {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 258, ../sass/screen.scss */
+  #newsletter form input[type="email"],
+  .contact input,
+  .contact textarea,
+  .contact label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

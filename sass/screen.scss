@@ -1,0 +1,265 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.dark {
+	padding: 15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+
+header {
+	background: #353637;
+	color: #ffffff;
+	min-height: 70px;
+	border-bottom: #32a0c2 3px solid;
+
+	& a {
+		color: #ffffff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	& li {
+		float: left;
+		display: inline;
+		padding: 0 20px 0 20px;
+	}
+
+	& nav {
+		padding-top: 30px;
+	}
+
+	& #branding {
+		float: left;
+		padding-top: 10px;
+	}
+
+	& nav {
+		float: right;
+		margin-top: 10px;
+	}
+
+	& .highlight, .current a {
+		color: #32a0c2;
+		font-weight: bold;
+	}
+
+	& a:hover {
+		color: #cccccc;
+		text-decoration: underline;
+	}
+}
+
+/* Showcase */
+
+#showcase {
+	min-height: 500px;
+	background:url('../images/headerbg.jpg') no-repeat center;
+	background-size: cover;
+	text-align: center;
+	color: #ffffff;
+
+
+	& h1 {
+		margin-top: 100px;
+		font-size: 55px;
+		margin-bottom: 10px;
+		color: white;
+		font-family: Passion One;
+		text-shadow: 3px 3px #353637;
+	}
+
+	& p {
+		font-size: 20px;
+	}
+}
+
+/* Newsletter */
+
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background: #353637;
+	border-top: #32a0c2 3px solid;
+
+	& h1 {
+		float:left;
+		font-size: 36px;
+		font-weight: bold;
+	}
+
+	& form {
+		float: right;
+		margin-top: 15px;
+	}
+
+	& input[type="email"] {
+		padding:4px;
+		height: 25px;
+		width: 250px;
+	}
+}
+
+.button-1 {
+	height: 38px;
+	background: #cccccc;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #353637;
+
+	&:hover {
+		background: #a3a3a3;
+	}
+}
+
+
+#boxes {
+	margin-top: 20px;
+
+	& .box {
+		float: left;
+		text-align: center;
+		width: 32%;
+		padding: 10px;
+	}
+
+	& h3 {
+		font-size: 26px;
+		font-weight: bold;
+	}
+}
+
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #32a0c2;
+	text-align: center;
+}
+
+/* Sidebar */
+
+aside#sidebar {
+	float: right;
+	width: 30%;
+	padding: 5px;
+
+	& h3 {
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+
+article#main-col {
+	float: left;
+	width: 65%;
+
+	& h1 {
+		font-size: 24px;
+		font-weight: bold;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+}
+
+aside#sidebar {
+
+	& input, textarea {
+		width: 90%;
+		padding: 5px;
+	}
+}
+
+/* Services */
+
+ul#services {
+
+	& li {
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background-color: #54b5d3;
+	}
+
+	& h3 {
+		border-bottom: #353637 solid 1px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	& p {
+		padding-top: 20px;
+	}
+
+	& .price {
+		font-weight: bold;
+	}
+}
+
+
+
+@media(max-width: 768px) {
+	header #branding,
+	header nav,
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar {
+		float:none;
+		text-align:center;
+		width: 100%;
+	}
+
+	header {
+		padding-bottom: 20px;
+	}
+
+	#showcase h1 {
+		margin-top: 40px;
+	}
+
+	#newsletter button {
+		display: block;
+		width: 100%;
+	}
+
+	#newsletter form input[type="email"],
+	.contact input,
+	.contact textarea,
+	.contact label{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
